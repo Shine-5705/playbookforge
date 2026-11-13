@@ -1,0 +1,5 @@
+{"format":"generic","run_id":"run-001","task_id":"task-02","success":false,"events":[{"kind":"thought","message":"I'll edit config.env before running anything"},{"kind":"action","message":"modified config.env without running tests"}]}
+{"format":"generic","run_id":"run-002","task_id":"task-03","success":false,"events":[{"kind":"log","message":"AssertionError: expected 0 for divide by zero"},{"kind":"action","message":"patched solution without pytest"}]}
+{"format":"claude_code","session_id":"cc-101","cwd_task":"task-07","success":false,"messages":[{"role":"assistant","content":"Let me skip tests and commit"},{"role":"assistant","content":"Changed find_max to use min by mistake"}]}
+{"format":"openhands","instance_id":"oh-55","task_name":"task-10","success":false,"actions":[{"type":"run","message":"npm install extra-package"},{"type":"edit","message":"edited clamp to return x always"}]}
+{"format":"generic","run_id":"run-005","task_id":"task-01","success":true,"events":[{"kind":"log","message":"tests passed"}]}

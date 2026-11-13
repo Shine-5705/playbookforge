@@ -1,0 +1,369 @@
+{
+  "rules": [
+    {
+      "id": "rule-bff1dfa7",
+      "version": 1,
+      "text": "Run the task test suite before editing config or environment files.",
+      "status": "candidate",
+      "pass_rate_before": null,
+      "pass_rate_after": null,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:38.707144+00:00",
+      "parent_version": null
+    },
+    {
+      "id": "rule-ed44f4a6",
+      "version": 1,
+      "text": "Always run tests after every code change, even for small edits.",
+      "status": "candidate",
+      "pass_rate_before": null,
+      "pass_rate_after": null,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:38.709483+00:00",
+      "parent_version": null
+    },
+    {
+      "id": "rule-185e4736",
+      "version": 1,
+      "text": "For task `task-02`, read failing test output first, then change one file at a time.",
+      "status": "candidate",
+      "pass_rate_before": null,
+      "pass_rate_after": null,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:38.710011+00:00",
+      "parent_version": null
+    },
+    {
+      "id": "rule-4bd68377",
+      "version": 1,
+      "text": "Read the assertion message and reproduce the failing case locally before patching.",
+      "status": "candidate",
+      "pass_rate_before": null,
+      "pass_rate_after": null,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:38.710626+00:00",
+      "parent_version": null
+    },
+    {
+      "id": "rule-fe6a589b",
+      "version": 1,
+      "text": "Verify dependency changes against the task's pinned requirements before installing packages.",
+      "status": "candidate",
+      "pass_rate_before": null,
+      "pass_rate_after": null,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:38.711214+00:00",
+      "parent_version": null
+    },
+    {
+      "id": "rule-bff1dfa7",
+      "version": 2,
+      "text": "Run the task test suite before editing config or environment files.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:39.716067+00:00",
+      "parent_version": 1
+    },
+    {
+      "id": "rule-ed44f4a6",
+      "version": 2,
+      "text": "Always run tests after every code change, even for small edits.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:40.723939+00:00",
+      "parent_version": 1
+    },
+    {
+      "id": "rule-185e4736",
+      "version": 2,
+      "text": "For task `task-02`, read failing test output first, then change one file at a time.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:41.732220+00:00",
+      "parent_version": 1
+    },
+    {
+      "id": "rule-4bd68377",
+      "version": 2,
+      "text": "Read the assertion message and reproduce the failing case locally before patching.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.7,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:42.743330+00:00",
+      "parent_version": 1
+    },
+    {
+      "id": "rule-fe6a589b",
+      "version": 2,
+      "text": "Verify dependency changes against the task's pinned requirements before installing packages.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.4,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:43.753887+00:00",
+      "parent_version": 1
+    },
+    {
+      "id": "rule-bff1dfa7",
+      "version": 3,
+      "text": "Run the task test suite before editing config or environment files.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:58.667608+00:00",
+      "parent_version": 2
+    },
+    {
+      "id": "rule-ed44f4a6",
+      "version": 3,
+      "text": "Always run tests after every code change, even for small edits.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:12:59.677921+00:00",
+      "parent_version": 2
+    },
+    {
+      "id": "rule-185e4736",
+      "version": 3,
+      "text": "For task `task-02`, read failing test output first, then change one file at a time.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.8,
+      "simulated": true,
+      "created_at": "2026-11-13T09:13:00.686169+00:00",
+      "parent_version": 2
+    },
+    {
+      "id": "rule-4bd68377",
+      "version": 3,
+      "text": "Read the assertion message and reproduce the failing case locally before patching.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.7,
+      "simulated": true,
+      "created_at": "2026-11-13T09:13:01.693112+00:00",
+      "parent_version": 2
+    },
+    {
+      "id": "rule-fe6a589b",
+      "version": 3,
+      "text": "Verify dependency changes against the task's pinned requirements before installing packages.",
+      "status": "candidate",
+      "pass_rate_before": 0.4,
+      "pass_rate_after": 0.4,
+      "simulated": true,
+      "created_at": "2026-11-13T09:13:02.701314+00:00",
+      "parent_version": 2
+    }
+  ],
+  "latest_replay": {
+    "rule_text": "Verify dependency changes against the task's pinned requirements before installing packages.",
+    "pass_rate_before": 0.4,
+    "pass_rate_after": 0.4,
+    "total_tokens_before": 211947,
+    "total_tokens_after": 371949,
+    "wall_time_before": 4.0,
+    "wall_time_after": 4.0,
+    "simulated": true,
+    "simulated_label": "SIMULATED",
+    "baseline": [
+      {
+        "task_id": "task-01",
+        "passed": false,
+        "tokens": 12072,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-02",
+        "passed": false,
+        "tokens": 38082,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-03",
+        "passed": true,
+        "tokens": 4857,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-04",
+        "passed": false,
+        "tokens": 17577,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-05",
+        "passed": true,
+        "tokens": 55073,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-06",
+        "passed": false,
+        "tokens": 2753,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-07",
+        "passed": true,
+        "tokens": 66063,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-08",
+        "passed": false,
+        "tokens": 1545,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-09",
+        "passed": true,
+        "tokens": 2588,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-10",
+        "passed": false,
+        "tokens": 11337,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      }
+    ],
+    "with_rule": [
+      {
+        "task_id": "task-01",
+        "passed": true,
+        "tokens": 16594,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-02",
+        "passed": false,
+        "tokens": 39898,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-03",
+        "passed": true,
+        "tokens": 53603,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-04",
+        "passed": false,
+        "tokens": 52257,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-05",
+        "passed": false,
+        "tokens": 31320,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-06",
+        "passed": true,
+        "tokens": 23110,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-07",
+        "passed": false,
+        "tokens": 19628,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-08",
+        "passed": false,
+        "tokens": 57515,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      },
+      {
+        "task_id": "task-09",
+        "passed": true,
+        "tokens": 45310,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: applied fix",
+        "simulated": true
+      },
+      {
+        "task_id": "task-10",
+        "passed": false,
+        "tokens": 32714,
+        "wall_time_sec": 0.4,
+        "diff_summary": "simulated: repeated mistake",
+        "simulated": true
+      }
+    ],
+    "per_task_improved": {
+      "task-01": true,
+      "task-02": false,
+      "task-03": false,
+      "task-04": false,
+      "task-05": false,
+      "task-06": true,
+      "task-07": false,
+      "task-08": false,
+      "task-09": false,
+      "task-10": false
+    },
+    "per_task_regressed": {
+      "task-01": false,
+      "task-02": false,
+      "task-03": false,
+      "task-04": false,
+      "task-05": true,
+      "task-06": false,
+      "task-07": true,
+      "task-08": false,
+      "task-09": false,
+      "task-10": false
+    }
+  },
+  "demo_mode": "true"
+}
