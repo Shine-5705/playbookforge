@@ -4,11 +4,22 @@
 **License:** MIT  
 **Hackathon:** HackerSquad AI Remote Hackathon (deadline Nov 15, 2026 11:59 PM PST)
 
+## What it does
+
 PlaybookForge turns failed **coding-agent run traces** into **versioned, replay-tested playbook rules** you can promote or roll back in one click. It ships with a **10-task benchmark suite**, a **Python replay harness**, **SQLite rule storage**, and a **Next.js dashboard**.
 
-## Problem
+The pipeline is: **ingest** JSONL traces (generic, Claude Code, OpenHands adapters) → **distil** candidate rules → **replay** the task suite with and without each rule → **promote** only when pass rate improves with zero per-task regressions → **rollback** any version from the dashboard.
 
-Agents repeat the same mistakes across runs. Lessons from failures rarely live in a **tested, versioned, reversible** form. PlaybookForge closes that loop: ingest traces → distil rules → replay with/without rules → promote only on measured improvement.
+## How it uses AI
+
+| Stage | AI role |
+|-------|---------|
+| **Distillation** | With `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` and `DEMO_MODE=false`, an LLM reads summaries of failed traces and returns JSON playbook rules (`backend/playbookforge/distill.py`). |
+| **DEMO_MODE** | With no API key or `DEMO_MODE=true`, a **deterministic heuristic** extracts the same style of rules offline (not a live model call). |
+| **Replay (demo)** | A **labelled simulated agent** produces before/after pass rates for the UI; numbers are marked **simulated** and are not real benchmarks. |
+| **Replay (non-demo)** | Task folders use `run_agent_stub.py`, which applies rules via `PLAYBOOK_RULE` and runs real **pytest** on bundled micro-tasks. |
+
+Optional distillation models: OpenAI `gpt-4o-mini`, Anthropic `claude-3-5-haiku-20241022`.
 
 ## Quick start (< 5 commands)
 
@@ -88,11 +99,27 @@ The UI and this README mark these numbers as **simulated** — they are for demo
 | `OPENAI_API_KEY` | Optional live distillation (gpt-4o-mini) |
 | `ANTHROPIC_API_KEY` | Optional live distillation (claude-3-5-haiku) |
 
-## Built during Nov 6–15, 2026
+## Built during the hackathon (Nov 6–15, 2026)
 
 All application code in this repository was authored **November 6–15, 2026** for the HackerSquad AI Remote Hackathon. No prior PlaybookForge codebase was imported.
 
-**Prior work:** none (greenfield hackathon submission).
+## Prior work disclosure
+
+**Prior work:** none. This is a greenfield hackathon submission; no earlier PlaybookForge repository or product code was copied in.
+
+## Sample & simulated data
+
+Files under `data/` are **synthetic demo fixtures**, not production agent logs:
+
+- `data/sample_traces.jsonl` — **sample** failure traces for ingest/distill demos (fictional run IDs).
+- `data/dashboard_export.json` — **simulated** replay metrics (`simulated: true` on rules); regenerate with `npm run seed` or `scripts/seed-demo.sh`.
+- `data/README.md` — short index of data files.
+
+See `data/README.md` for details.
+
+## Credits & licenses
+
+Project license: **MIT** — see [`LICENSE`](LICENSE) (Copyright 2026 Shine Gupta).
 
 ## Third-party components & AI assistants
 
